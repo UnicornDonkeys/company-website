@@ -29,10 +29,10 @@ jobs:
     - name: Build my App  
       run: npm run build
       env:
-        NEXT_PUBLIC_BASE_PATH: /UnicornDonkeys/company-website
+        NEXT_PUBLIC_BASE_PATH: /company-website
     - run: npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: /UnicornDonkeys/company-website
+        NEXT_PUBLIC_BASE_PATH: /company-website
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
